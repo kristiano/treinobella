@@ -636,10 +636,8 @@ const App = () => {
                             </div>
 
                             <input
-                              type="number"
+                              type="text"
                               inputMode="decimal"
-                              step="0.5"
-                              min="0"
                               placeholder="—"
                               value={ex.weights[si]}
                               onKeyDown={(e) => {
@@ -659,9 +657,8 @@ const App = () => {
                             />
 
                             <input
-                              type="number"
+                              type="text"
                               inputMode="numeric"
-                              min="0"
                               placeholder={ex.reps.toString().replace(/[^0-9]/g, '') || "—"}
                               value={ex.repsCompleted?.[si] ?? ""}
                               onKeyDown={(e) => {
